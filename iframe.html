@@ -1,23 +1,53 @@
-
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <base target="_parent">
-        <script>
-          if (window.parent !== window) {
-            window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__REACT_DEVTOOLS_GLOBAL_HOOK__;
-          }
-        </script>
-        <title>Storybook</title>
-        
-        
-      </head>
-      <body>
-        <div id="root"></div>
-        <div id="error-display"></div>
-        <script src="static/preview.aeed42e1e1f9d9f33c53.bundle.js"></script>
-      </body>
-    </html>
+Html Webpack Plugin:
+<pre>
+  TypeError: Cannot read property 'request' of undefined
   
+  - ExternalModuleFactoryPlugin.js:37 handleExternals
+    [common-components]/[webpack]/lib/ExternalModuleFactoryPlugin.js:37:34
+  
+  - ExternalModuleFactoryPlugin.js:46 next
+    [common-components]/[webpack]/lib/ExternalModuleFactoryPlugin.js:46:8
+  
+  - ExternalModuleFactoryPlugin.js:59 handleExternals
+    [common-components]/[webpack]/lib/ExternalModuleFactoryPlugin.js:59:7
+  
+  - ExternalModuleFactoryPlugin.js:79 ExternalModuleFactoryPlugin.<anonymous>
+    [common-components]/[webpack]/lib/ExternalModuleFactoryPlugin.js:79:5
+  
+  - NormalModuleFactory.js:234 applyPluginsAsyncWaterfall
+    [common-components]/[react]/[webpack]/lib/NormalModuleFactory.js:234:4
+  
+  - Tapable.js:260 NormalModuleFactory.applyPluginsAsyncWaterfall
+    [common-components]/[tapable]/lib/Tapable.js:260:70
+  
+  - NormalModuleFactory.js:218 NormalModuleFactory.create
+    [common-components]/[react]/[webpack]/lib/NormalModuleFactory.js:218:8
+  
+  - Compilation.js:403 semaphore.acquire
+    [common-components]/[react]/[webpack]/lib/Compilation.js:403:18
+  
+  - Semaphore.js:16 Semaphore.acquire
+    [common-components]/[react]/[webpack]/lib/util/Semaphore.js:16:4
+  
+  - Compilation.js:402 Compilation._addModuleChain
+    [common-components]/[react]/[webpack]/lib/Compilation.js:402:18
+  
+  - Compilation.js:490 Compilation.addEntry
+    [common-components]/[react]/[webpack]/lib/Compilation.js:490:8
+  
+  - SingleEntryPlugin.js:22 SingleEntryPlugin.<anonymous>
+    [common-components]/[webpack]/lib/SingleEntryPlugin.js:22:15
+  
+  - Tapable.js:293 Compiler.applyPluginsParallel
+    [common-components]/[tapable]/lib/Tapable.js:293:14
+  
+  - Compiler.js:499 applyPluginsAsync.err
+    [common-components]/[react]/[webpack]/lib/Compiler.js:499:9
+  
+  - Tapable.js:195 Compiler.applyPluginsAsyncSeries
+    [common-components]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compiler.js:492 Compiler.compile
+    [common-components]/[react]/[webpack]/lib/Compiler.js:492:8
+  
+</pre><script type="text/javascript" src="static/preview.7ca2ab85292dcc418369.bundle.js"></script>
