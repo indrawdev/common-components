@@ -1,53 +1,44 @@
-Html Webpack Plugin:
-<pre>
-  TypeError: Cannot read property 'request' of undefined
-  
-  - ExternalModuleFactoryPlugin.js:37 handleExternals
-    [common-components]/[webpack]/lib/ExternalModuleFactoryPlugin.js:37:34
-  
-  - ExternalModuleFactoryPlugin.js:46 next
-    [common-components]/[webpack]/lib/ExternalModuleFactoryPlugin.js:46:8
-  
-  - ExternalModuleFactoryPlugin.js:59 handleExternals
-    [common-components]/[webpack]/lib/ExternalModuleFactoryPlugin.js:59:7
-  
-  - ExternalModuleFactoryPlugin.js:79 ExternalModuleFactoryPlugin.<anonymous>
-    [common-components]/[webpack]/lib/ExternalModuleFactoryPlugin.js:79:5
-  
-  - NormalModuleFactory.js:234 applyPluginsAsyncWaterfall
-    [common-components]/[react]/[webpack]/lib/NormalModuleFactory.js:234:4
-  
-  - Tapable.js:260 NormalModuleFactory.applyPluginsAsyncWaterfall
-    [common-components]/[tapable]/lib/Tapable.js:260:70
-  
-  - NormalModuleFactory.js:218 NormalModuleFactory.create
-    [common-components]/[react]/[webpack]/lib/NormalModuleFactory.js:218:8
-  
-  - Compilation.js:403 semaphore.acquire
-    [common-components]/[react]/[webpack]/lib/Compilation.js:403:18
-  
-  - Semaphore.js:16 Semaphore.acquire
-    [common-components]/[react]/[webpack]/lib/util/Semaphore.js:16:4
-  
-  - Compilation.js:402 Compilation._addModuleChain
-    [common-components]/[react]/[webpack]/lib/Compilation.js:402:18
-  
-  - Compilation.js:490 Compilation.addEntry
-    [common-components]/[react]/[webpack]/lib/Compilation.js:490:8
-  
-  - SingleEntryPlugin.js:22 SingleEntryPlugin.<anonymous>
-    [common-components]/[webpack]/lib/SingleEntryPlugin.js:22:15
-  
-  - Tapable.js:293 Compiler.applyPluginsParallel
-    [common-components]/[tapable]/lib/Tapable.js:293:14
-  
-  - Compiler.js:499 applyPluginsAsync.err
-    [common-components]/[react]/[webpack]/lib/Compiler.js:499:9
-  
-  - Tapable.js:195 Compiler.applyPluginsAsyncSeries
-    [common-components]/[tapable]/lib/Tapable.js:195:46
-  
-  - Compiler.js:492 Compiler.compile
-    [common-components]/[react]/[webpack]/lib/Compiler.js:492:8
-  
-</pre><script type="text/javascript" src="static/manager.f883fbfa567b423bc68f.bundle.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="storybook-version" content="3.4.6">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <title>Storybook</title>
+    <style>
+        /*
+          When resizing panels, the drag event breaks if the cursor
+          moves over the iframe. Add the 'dragging' class to the body
+          at drag start and remove it when the drag ends.
+         */
+        .dragging iframe {
+            pointer-events: none;
+        }
+
+        /* Styling the fuzzy search box placeholders */
+        .searchBox::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #ddd;
+            font-size: 16px;
+        }
+
+        .searchBox::-moz-placeholder { /* Firefox 19+ */
+            color: #ddd;
+            font-size: 16px;
+        }
+
+        .searchBox:focus{
+            border-color: #EEE !important;
+        }
+
+        .btn:hover{
+            background-color: #eee
+        }
+    </style>
+    
+
+</head>
+<body style="margin: 0;">
+    <div id="root"></div>
+<script type="text/javascript" src="static/manager.d112b450f9f9a722cc75.bundle.js"></script></body>
+</html>
